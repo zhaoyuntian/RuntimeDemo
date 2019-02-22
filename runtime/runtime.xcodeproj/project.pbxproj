@@ -15,6 +15,9 @@
 		213B0CAC221F9ABD008B272B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 213B0CAB221F9ABD008B272B /* main.m */; };
 		213B0CB6221F9ABE008B272B /* runtimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 213B0CB5221F9ABE008B272B /* runtimeTests.m */; };
 		213B0CC1221F9ABE008B272B /* runtimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 213B0CC0221F9ABE008B272B /* runtimeUITests.m */; };
+		213B0CD1221F9F62008B272B /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 213B0CD0221F9F62008B272B /* NSObject+Swizzling.m */; };
+		213B0CD4221FA2A4008B272B /* UIViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 213B0CD3221FA2A4008B272B /* UIViewController+Swizzling.m */; };
+		213B0CD7221FA755008B272B /* NSMutableArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 213B0CD6221FA755008B272B /* NSMutableArray+Safe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		213B0CBC221F9ABE008B272B /* runtimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = runtimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		213B0CC0221F9ABE008B272B /* runtimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = runtimeUITests.m; sourceTree = "<group>"; };
 		213B0CC2221F9ABE008B272B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		213B0CCF221F9F62008B272B /* NSObject+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		213B0CD0221F9F62008B272B /* NSObject+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		213B0CD2221FA2A4008B272B /* UIViewController+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzling.h"; sourceTree = "<group>"; };
+		213B0CD3221FA2A4008B272B /* UIViewController+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzling.m"; sourceTree = "<group>"; };
+		213B0CD5221FA755008B272B /* NSMutableArray+Safe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Safe.h"; sourceTree = "<group>"; };
+		213B0CD6221FA755008B272B /* NSMutableArray+Safe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Safe.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		213B0C9B221F9ABD008B272B /* runtime */ = {
 			isa = PBXGroup;
 			children = (
+				213B0CCE221F9F42008B272B /* MethodSwizzling */,
 				213B0C9C221F9ABD008B272B /* AppDelegate.h */,
 				213B0C9D221F9ABD008B272B /* AppDelegate.m */,
 				213B0C9F221F9ABD008B272B /* ViewController.h */,
@@ -130,6 +140,19 @@
 				213B0CC2221F9ABE008B272B /* Info.plist */,
 			);
 			path = runtimeUITests;
+			sourceTree = "<group>";
+		};
+		213B0CCE221F9F42008B272B /* MethodSwizzling */ = {
+			isa = PBXGroup;
+			children = (
+				213B0CCF221F9F62008B272B /* NSObject+Swizzling.h */,
+				213B0CD0221F9F62008B272B /* NSObject+Swizzling.m */,
+				213B0CD2221FA2A4008B272B /* UIViewController+Swizzling.h */,
+				213B0CD3221FA2A4008B272B /* UIViewController+Swizzling.m */,
+				213B0CD5221FA755008B272B /* NSMutableArray+Safe.h */,
+				213B0CD6221FA755008B272B /* NSMutableArray+Safe.m */,
+			);
+			path = MethodSwizzling;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +287,10 @@
 			files = (
 				213B0CA1221F9ABD008B272B /* ViewController.m in Sources */,
 				213B0CAC221F9ABD008B272B /* main.m in Sources */,
+				213B0CD7221FA755008B272B /* NSMutableArray+Safe.m in Sources */,
 				213B0C9E221F9ABD008B272B /* AppDelegate.m in Sources */,
+				213B0CD4221FA2A4008B272B /* UIViewController+Swizzling.m in Sources */,
+				213B0CD1221F9F62008B272B /* NSObject+Swizzling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
