@@ -25,6 +25,7 @@
 		213B0CE7221FCF64008B272B /* PlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 213B0CE6221FCF64008B272B /* PlaceholderView.m */; };
 		213B0CEB221FDF52008B272B /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 213B0CEA221FDF52008B272B /* Student.m */; };
 		213B0CEE221FE2D4008B272B /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 213B0CED221FE2D4008B272B /* NSObject+Extension.m */; };
+		2158B377231E0B1D0019249C /* UnicodeInputChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 2158B376231E0B1D0019249C /* UnicodeInputChinese.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		213B0CEA221FDF52008B272B /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		213B0CEC221FE2D4008B272B /* NSObject+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
 		213B0CED221FE2D4008B272B /* NSObject+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		2158B375231E0B1D0019249C /* UnicodeInputChinese.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnicodeInputChinese.h; sourceTree = "<group>"; };
+		2158B376231E0B1D0019249C /* UnicodeInputChinese.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnicodeInputChinese.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,7 @@
 		213B0C9B221F9ABD008B272B /* runtime */ = {
 			isa = PBXGroup;
 			children = (
+				2158B374231E0ABB0019249C /* Unicode */,
 				213B0CE8221FDE70008B272B /* Model */,
 				213B0CDE221FCEEE008B272B /* NoDataPlaceholder */,
 				213B0CCE221F9F42008B272B /* MethodSwizzling */,
@@ -204,6 +208,15 @@
 				213B0CED221FE2D4008B272B /* NSObject+Extension.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2158B374231E0ABB0019249C /* Unicode */ = {
+			isa = PBXGroup;
+			children = (
+				2158B375231E0B1D0019249C /* UnicodeInputChinese.h */,
+				2158B376231E0B1D0019249C /* UnicodeInputChinese.m */,
+			);
+			path = Unicode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +359,7 @@
 				213B0CDA221FC7C0008B272B /* UIButton+Swizzling.m in Sources */,
 				213B0CE7221FCF64008B272B /* PlaceholderView.m in Sources */,
 				213B0CD1221F9F62008B272B /* NSObject+Swizzling.m in Sources */,
+				2158B377231E0B1D0019249C /* UnicodeInputChinese.m in Sources */,
 				213B0CDD221FCB68008B272B /* UINavigationController+Swizzling.m in Sources */,
 				213B0CE1221FCF1C008B272B /* UITableView+Placeholder.m in Sources */,
 				213B0CEB221FDF52008B272B /* Student.m in Sources */,
